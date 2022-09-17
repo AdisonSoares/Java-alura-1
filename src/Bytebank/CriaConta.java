@@ -1,4 +1,4 @@
-package Organizacao;
+package Bytebank;
 
 public class CriaConta {
 

@@ -1,4 +1,4 @@
-package Organizacao;
+package Bytebank;
 
 public class TesteMetodo {
 	public static void main(String[] args) {
