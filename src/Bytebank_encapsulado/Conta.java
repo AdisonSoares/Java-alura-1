@@ -81,6 +81,7 @@ public class Conta {
 		//this.saldo - Errado pois o static trabalha com a classe Conta e nao com o objeto.
 		return Conta.total;
 	}
+	
 }
 
 
