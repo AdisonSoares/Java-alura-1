@@ -1,6 +1,7 @@
 package Bytebank_encapsulado;
 
 public class TestaValores {
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		Conta conta = new Conta(1489, 456789);
 		System.out.println("Agência: "+conta.getAgencia());

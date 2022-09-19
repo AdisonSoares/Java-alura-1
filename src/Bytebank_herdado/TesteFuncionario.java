@@ -10,7 +10,7 @@ public class TesteFuncionario {
 		
 		System.out.println("Nome do funcionário: "+funcionario_1.getNome());
 		System.out.println("Valor da bonificação: R$"+funcionario_1.getBonificacao());
-
+		
+		//funcionario_1.salario = 300;
 	}
-
 }
