@@ -1,4 +1,4 @@
-package Bytebank_encapsulado;
+package Bytebank_herdado_conta;
 
 public class Conta {
 	private double saldo;
@@ -12,7 +12,6 @@ public class Conta {
 		System.out.println("Total de contas: "+ Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
-		this.saldo = 100;
 		System.out.println("Conta sendo criada: "+this.numero);
 	}
 	
