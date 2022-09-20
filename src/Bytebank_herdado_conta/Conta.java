@@ -1,7 +1,7 @@
 package Bytebank_herdado_conta;
 
-public class Conta {
-	private double saldo;
+public abstract class Conta {
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -15,9 +15,7 @@ public class Conta {
 		System.out.println("Conta sendo criada: "+this.numero);
 	}
 	
-	public void deposita(double valor) {
-		this.saldo += valor;
-	}
+	public abstract void deposita(double valor);
 
 	public boolean saca(double valor) {
 		if (this.saldo >= valor) {
@@ -77,7 +75,6 @@ public class Conta {
 	}
 	
 	public static int getTotal() {
-		//this.saldo - Errado pois o static trabalha com a classe Conta e nao com o objeto.
 		return Conta.total;
 	}
 }
