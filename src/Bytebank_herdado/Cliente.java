@@ -1,11 +1,12 @@
 package Bytebank_herdado;
 
-public class Designer extends Funcionario implements Autorizado {
+public class Cliente implements Autorizado {
 	private AutenticacaoCompose autenticacaoCompose;
-	
-	public Designer() {
-		autenticacaoCompose = new AutenticacaoCompose();
+
+	public Cliente() {
+		this.autenticacaoCompose = new AutenticacaoCompose();
 	}
+
 	@Override
 	public void setSenha(int senha) {
 		this.autenticacaoCompose.setSenha(senha);
@@ -14,10 +15,5 @@ public class Designer extends Funcionario implements Autorizado {
 	@Override
 	public boolean autentica(int senha) {
 		return this.autenticacaoCompose.autentica(senha);
-	}
-
-	public double getBonificacao() {
-		System.out.println("Bonificação do designer!");
-		return 200;
 	}
 }
