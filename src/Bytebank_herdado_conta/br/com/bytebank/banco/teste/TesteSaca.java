@@ -1,4 +1,5 @@
-package Bytebank_herdado_conta;
+package Bytebank_herdado_conta.br.com.bytebank.banco.teste;
+import Bytebank_herdado_conta.br.com.bytebank.banco.modelo.*;
 
 public class TesteSaca {
 

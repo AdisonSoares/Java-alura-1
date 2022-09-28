@@ -1,4 +1,4 @@
-package Bytebank_herdado_conta;
+package Bytebank_herdado_conta.br.com.bytebank.banco.modelo;
 
 public abstract class Conta {
 	protected double saldo;
