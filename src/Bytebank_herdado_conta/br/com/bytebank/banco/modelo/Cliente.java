@@ -1,5 +1,11 @@
 package Bytebank_herdado_conta.br.com.bytebank.banco.modelo;
 
+/**
+ * Classe que representa um cliente do banco
+ * @author Adison
+ * @version 0.1
+ *
+ */
 public class Cliente {
 	private String nome;
 	private String cpf;

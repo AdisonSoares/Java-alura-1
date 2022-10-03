@@ -1,5 +1,9 @@
 package Bytebank_herdado_conta.br.com.bytebank.banco.modelo;
-
+/**
+ * Classe que representa uma conta do banco
+ * @author Adison
+ *
+ */
 public abstract class Conta {
 	protected double saldo;
 	private int agencia;
@@ -72,5 +76,10 @@ public abstract class Conta {
 
 	public static int getTotal() {
 		return Conta.total;
+	}
+	
+	@Override
+	public String toString() {
+		return "número: " + this.numero;
 	}
 }
