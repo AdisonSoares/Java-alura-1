@@ -4,7 +4,7 @@ package Bytebank_herdado_conta.br.com.bytebank.banco.modelo;
  * @author Adison
  *
  */
-public abstract class Conta {
+public abstract class Conta extends Object implements Comparable<Conta>{
 	protected double saldo;
 	private int agencia;
 	private int numero;
@@ -79,7 +79,25 @@ public abstract class Conta {
 	}
 	
 	@Override
+	public boolean equals(Object object) {
+		Conta conta = (Conta) object;
+		if(this.agencia != conta.agencia) {
+			return false;
+		}
+		if(this.numero != conta.numero) {
+			return false;
+		}
+		return true;
+	}
+	
+	@Override
 	public String toString() {
-		return "número: " + this.numero;
+		return "número: " + this.numero + " saldo: "
+				+this.saldo;
+	}
+	
+	@Override
+	public int compareTo(Conta outraConta) {
+		return Double.compare(this.saldo, outraConta.saldo);
 	}
 }
