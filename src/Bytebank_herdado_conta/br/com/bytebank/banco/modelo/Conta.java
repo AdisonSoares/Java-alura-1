@@ -1,14 +1,17 @@
 package Bytebank_herdado_conta.br.com.bytebank.banco.modelo;
+
+import java.io.Serializable;
+
 /**
  * Classe que representa uma conta do banco
  * @author Adison
  *
  */
-public abstract class Conta extends Object implements Comparable<Conta>{
+public abstract class Conta extends Object implements Comparable<Conta>, Serializable{
 	protected double saldo;
 	private int agencia;
 	private int numero;
-	private Cliente titular;
+	private transient Cliente titular;
 	private static int total = 0;
 
 	public Conta(int agencia, int numero) {

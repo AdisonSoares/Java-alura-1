@@ -1,6 +1,6 @@
 # Java-alura
 
-Cursos de programaçao oferecidos pelo grupo Alura, no caso desse projeto
+Cursos de programaçao oferecidos pelo grupo Alura, esse projeto é 
 voltado para o desenvolvimento em Java back-end.
 Cursos concluídos:
  - Java JRE e JDK
