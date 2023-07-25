@@ -1,4 +1,4 @@
-# Java-alura
+# Aprenda a programar em Java com Orientação a Objetos
 
 Cursos de programaçao oferecidos pelo grupo Alura, esse projeto é 
 voltado para o desenvolvimento em Java back-end.
